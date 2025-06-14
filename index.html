@@ -4,20 +4,24 @@
 h1 {
   text-align: center;
 }
-.container {
-      display:flex;
-    }
-  .column {
+.column {
+  float: left;
   width: 50%;
 }
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 </style>
 <head>
   <title>Arvind Neelakanatn</title>
 </head>  
 <body>
 <h1>Arvind Neelakantan</h1>
-  <div class="container">
+  <div class="row">
   <div class="column">
        <img src="IMG_0081.jpg" alt="profile" width="250" height="250" class="center">
    </div>
