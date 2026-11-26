@@ -5,70 +5,76 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arvind Neelakantan</title>
   <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
-
     body {
-      margin: 0;
-      min-height: 100vh;
-      min-height: 100dvh;
-      padding: 28px;
-      display: flex;
-      flex-direction: column;
-      background-color: #ECE9E2; /* Uniform 16px outer margin on all 4 sides */
-      color: #1F2328;            /* Soft charcoal text */
-      font-family: Arial, sans-serif;
+      background-color: #F9F8F6;
+      color: #1F2328;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       text-align: center;
+      max-width: 600px;
+      margin: 48px auto;
+      padding: 0 20px;
+      line-height: 1.6;
     }
 
-    main {
-      flex: 1;
-      padding: 24px 20px;
-      background-color: #F9F8F6; /* Original off-white card */
-      border: 1px solid #DDD8CE;
-      border-radius: 12px;
+    h1 {
+      margin-bottom: 12px;
     }
 
-    h2 {
+    nav {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
       gap: 24px;
+      margin-bottom: 28px;
+      font-size: 24px;
+      font-weight: 600;
     }
 
     a {
       color: #0969DA;
+      text-decoration: none;
+    }
+
+    a:hover {
       text-decoration: underline;
-      text-underline-offset: 4px;
-      text-decoration-thickness: 1.5px;
     }
 
     img {
-      max-width: 100%;
-      height: auto;
+      width: 220px;
+      height: 220px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 16px;
     }
 
     p {
-      font-size: 20px;
+      font-size: 18px;
+      margin: 12px 0;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #16171A;
+        color: #E6E6E6;
+      }
+      a {
+        color: #58A6FF;
+      }
     }
   </style>
 </head>
 <body>
-  <main>
-    <h1>Arvind Neelakantan</h1>
+  <h1>Arvind Neelakantan</h1>
 
-    <h2>
-      <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
-      <a href="https://scholar.google.com/citations?user=ygTCc6cAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Publications</a>
-      <a href="https://x.com/arvind_io" target="_blank" rel="noopener noreferrer">X</a>
-    </h2>
+  <nav>
+    <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+    <a href="https://scholar.google.com/citations?user=ygTCc6cAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Publications</a>
+    <a href="https://x.com/arvind_io" target="_blank" rel="noopener noreferrer">X</a>
+  </nav>
 
-    <img src="new_profile.jpg" alt="Profile photo" width="250" height="250">
+  <img src="new_profile.jpg" alt="Profile photo">
 
-    <p>I'm a Research Scientist at <a href="https://deepmind.google" target="_blank" rel="noopener noreferrer">Google DeepMind</a>.</p>
-    <p>I've worked at <a href="https://ai.meta.com" target="_blank" rel="noopener noreferrer">Meta</a>, <a href="https://openai.com" target="_blank" rel="noopener noreferrer">OpenAI</a>, and <a href="https://en.wikipedia.org/wiki/Google_Brain" target="_blank" rel="noopener noreferrer">Google Brain</a> in the past.</p>
-    <p>I got my PhD from <a href="https://www.cics.umass.edu" target="_blank" rel="noopener noreferrer">UMass Amherst</a>, where I was also a <a href="https://research.google/blog/announcing-the-2016-google-phd-fellows-for-north-america-europe-and-the-middle-east/?m=1" target="_blank" rel="noopener noreferrer">Google PhD fellow</a>.</p>
-  </main>
+  <p>I'm a Research Scientist at <a href="https://deepmind.google" target="_blank" rel="noopener noreferrer">Google DeepMind</a>.</p>
+  <p>I've worked at <a href="https://ai.meta.com" target="_blank" rel="noopener noreferrer">Meta</a>, <a href="https://openai.com" target="_blank" rel="noopener noreferrer">OpenAI</a>, and <a href="https://en.wikipedia.org/wiki/Google_Brain" target="_blank" rel="noopener noreferrer">Google Brain</a> in the past.</p>
+  <p>I got my PhD from <a href="https://www.cics.umass.edu" target="_blank" rel="noopener noreferrer">UMass Amherst</a>, where I was also a <a href="https://research.google/blog/announcing-the-2016-google-phd-fellows-for-north-america-europe-and-the-middle-east/?m=1" target="_blank" rel="noopener noreferrer">Google PhD fellow</a>.</p>
 </body>
 </html>
