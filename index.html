@@ -5,18 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arvind Neelakantan</title>
   <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      padding: 16px 12px;;
-      background-color: #ECE9E2; /* Outer warm-gray margin */
+      min-height: 100vh;
+      min-height: 100dvh;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      background-color: #ECE9E2; /* Uniform 16px outer margin on all 4 sides */
       color: #1F2328;            /* Soft charcoal text */
       font-family: Arial, sans-serif;
       text-align: center;
     }
 
     main {
-      max-width: none;
-      margin: 0 auto;
+      flex: 1;
       padding: 24px 20px;
       background-color: #F9F8F6; /* Original off-white card */
       border: 1px solid #DDD8CE;
